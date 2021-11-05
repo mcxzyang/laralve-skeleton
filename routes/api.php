@@ -19,6 +19,6 @@ use App\Http\Controllers\Api\UsersController;
 Route::post('login', [AuthController::class, 'login']);
 Route::post('refresh', [AuthController::class, 'refresh']);
 
-Route::group(['middleware' => 'auth:api'], function(){
+Route::group(['middleware' => 'auth:api'], function () {
     Route::resource('users', UsersController::class);
 });
