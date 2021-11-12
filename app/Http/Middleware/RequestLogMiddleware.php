@@ -10,7 +10,7 @@
 
 namespace App\Http\Middleware;
 
-use App\Models\Models\RequestLog;
+use App\Models\RequestLog;
 use Closure;
 use Illuminate\Http\Request;
 
